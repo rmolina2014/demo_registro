@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+           <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#35A768">
+        <title>Demo</title>
+        <link rel="stylesheet" type="text/css" href="assets/ext/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/ext/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/ext/cookieconsent/cookieconsent.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/frontend.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/general.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style-bar-steps.css">
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="icon" sizes="192x192" href="assets/img/turnos.png">
+        <script src="assets/ext/fontawesome/js/fontawesome.min.js"></script>
+        <script src="assets/ext/fontawesome/js/solid.min.js"></script>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+<style type="text/css">
+
+#map { height: 400px; }
+</style>
+
+    </head>
+    <body>
+
+    <nav class="navbar navbar-light navbar-expand-md fixed-top">
+     
+     <div class="container">
+        <div class="col-md-10">
+            <a href="index.html" class="navbar-brand"><img id="img-logo-gobierno" src="assets/img/logosanjuan.png" alt="Isologo Gobierno de San Juan"></a>
+        </div>
+        <div class="col-md-2">
+            <h4>Demo</h4>
+        </div>  
+    </div>
+    </nav>
+     
+    <br>
+    <br>
+    <br>
+     <br>
+  
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div id="custom-search-input">
+                <div class="input-group">
+                    <input type="text" class="search-query form-control" placeholder="Buscador por palabra" />
+                    <span class="input-group-btn">
+                        <button type="button" disabled>
+                            <span class="fa fa-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+    
+<div class="container">
+
+    <div id="map">
+    </div>
+    <br>
+   
+    <div class="row">
+        <div class="col-12">
+            <a href="primera.html"class="btn btn-outline-primary">Patrimonio Arquitectónico</a>
+            <button type="button" class="btn btn-outline-primary">Artístico</button>
+            <button type="button" class="btn btn-outline-primary">Natural</button>
+            <button type="button" class="btn btn-outline-primary">Intangible</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-12">
+          <h3>Biblioteca</h3>
+           <hr class="my-4">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+          <h3>Link</h3>
+           <hr class="my-4">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+          <h3>Información Util</h3>
+           <hr class="my-4">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+          <h3>Organigrama</h3>
+           <hr class="my-4">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+          <h3>Protocolos</h3>
+           <hr class="my-4">
+        </div>
+    </div>
+
+        
+</div>
+
+ <br>
+    
+        <!-- Footer-->
+        <!--footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer-->
+
+<footer class="container-fluid bg-primary py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <p>
+                    <a href="http://www.sanjuan.gob.ar" target="_self" title="Gobierno de San Juan">
+                        <img src="https://d1pucn86e4upao.cloudfront.net/templates/g5_hydrogen/custom/images/logos/gob_sanjuan_logo_footer.svg"
+                            alt="Gobierno de San Juan" width="150">
+                    </a>
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5>Accesos Frecuentes</h5>
+                <ul class="list-unstyled text-small">
+                    <li>
+                        <a class="link-footer" href="https://webmail.sanjuan.gob.ar/owa/" target="_blank">
+                            &nbsp;Acceso Webmail
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="http://correo.sanjuan.gob.ar/" target="_blank">
+                            &nbsp;Sitio de Correo
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="http://tramite.sanjuan.gob.ar/" target="_blank">
+                            &nbsp;Guía de Trámites
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5 class="titulosclaros corregir" style="font-weight: bold;">Teléfonos Útiles</h5>
+                <ul class="list-unstyled text-small">
+                    <li>
+                        <svg width="16" class="svg-inline--fa fa-phone fa-w-16 fa-1x" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                            <path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path>
+                        </svg>
+                        &nbsp;
+                        <strong>911</strong>&nbsp;Emergencias
+                    </li>
+                    <li>
+                        <svg width="16" class="svg-inline--fa fa-phone fa-w-16 fa-1x" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path>
+                        </svg>
+                        &nbsp;
+                        <strong>101</strong>&nbsp;Policía
+                    </li>
+                    <li>
+                        <svg width="16" class="svg-inline--fa fa-phone fa-w-16 fa-1x" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path>
+                        </svg>
+                        &nbsp;
+                        <strong>107</strong>&nbsp;Emergencias Médicas
+                    </li>
+                    <li>
+                        <svg width="16" class="svg-inline--fa fa-phone fa-w-16 fa-1x" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path>
+                        </svg>
+                        &nbsp;
+                        <strong>100</strong>&nbsp;Bomberos
+                    </li>
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+</footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <script type="text/javascript">
+         var map = L.map('map').setView([-31.537117,-68.5047079 ], 13);
+         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+}).addTo(map);
+        </script>
+    </body>
+</html>

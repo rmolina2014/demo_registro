@@ -1,0 +1,697 @@
+root {
+    display: block
+}
+body,
+html {
+    height: 100%;
+}
+body {
+    background-color: #f5f8fa;
+}
+#main {
+    min-height: 100%;
+}
+#book-appointment-wizard {
+    background: #fff;
+    /* min-height: 480px; */
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    margin-bottom: 20%;
+}
+#book-appointment-wizard #header {
+    overflow: auto;
+    height: auto;
+    padding: 0px 15px;
+    background: #fff;
+    border-bottom: 1px solid #ebeef1;
+}
+#book-appointment-wizard #company-name {
+    float: none;
+    display: block;
+    text-align: center;
+    /* font-size: 24px; */
+    font-weight: lighter;
+    color: #212529;
+    margin: 20px 0;
+}
+#book-appointment-wizard #steps {
+    float: none;
+    display: block;
+    overflow: auto;
+    margin: 15px auto;
+    width: 190px;
+}
+#book-appointment-wizard #book-appointment-form #book-appointment-submit {
+    width: 100%;
+    margin-right: 0;
+}
+#book-appointment-wizard #form-message {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#book-appointment-wizard .wizard-frame {
+    height: auto;
+    padding: 15px;
+}
+#book-appointment-wizard .wizard-frame .frame-container {
+    height: auto;
+    padding: 15px 0;
+}
+#book-appointment-wizard .frame-container .frame-title {
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+#book-appointment-wizard .frame-container .frame-content {
+    float: none;
+}
+#book-appointment-wizard .wizard-frame .command-buttons {
+    float: none;
+    margin: 15px auto;
+    text-align: center;
+}
+#book-appointment-wizard .wizard-frame .command-buttons .btn {
+    min-width: 120px;
+    margin-right: 10px;
+}
+#book-appointment-wizard .wizard-frame .command-buttons .btn:last-child {
+    margin-right: 0;
+}
+#book-appointment-wizard .wizard-frame #select-date {
+    max-width: 288px;
+    margin: auto;
+    padding: 15px 0;
+}
+#book-appointment-wizard .wizard-frame #select-date>.ui-datepicker {
+    margin: auto;
+}
+#book-appointment-wizard .wizard-frame #select-time {
+    max-width: 288px;
+    margin: auto;
+    /* padding: 15px 0 */
+}
+#book-appointment-wizard .book-step {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    float: left;
+    background: #dee2e6;
+    padding: 8px;
+    margin-right: 12px;
+    margin-top: 6px;
+    border-radius: .25rem;
+    transition: all .3s linear;
+}
+#book-appointment-wizard .book-step:last-child {
+    margin-right: 0;
+}
+#book-appointment-wizard .book-step strong {
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    color: #bd2130;
+    transition: all .3s linear;
+    cursor: default;
+}
+#book-appointment-wizard .active-step {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    float: left;
+    background: #fff;
+    padding: 7px;
+    margin-right: 13px;
+    margin-top: 0;
+}
+#book-appointment-wizard .active-step strong {
+    color: #bd2130;
+    font-size: 21px;
+}
+#book-appointment-wizard #frame-footer {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ebeef1;
+}
+
+#book-appointment-wizard #frame-footer-consulta {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ebeef1;
+    margin-top: 10%;
+}
+
+#book-appointment-wizard #available-hours {
+    overflow: auto;
+    margin: 15px 0;
+    padding-right: 10px;
+    width: auto;
+    max-height: 315px;
+}
+#book-appointment-wizard #available-hours div {
+    margin-right: 30px;
+}
+#book-appointment-wizard #available-hours .available-hour {
+    margin-bottom: 10px;
+    border-color: #bd2130;
+    color: #bd2130;
+}
+#book-appointment-wizard #available-hours .selected-hour {
+    background-color: #9E1724;
+    border-color: #9E1724;
+    color: #fff;
+}
+#book-appointment-wizard .span3 {
+    min-width: 270px;
+}
+#book-appointment-wizard #select-timezone {
+    margin-bottom: 15px;
+}
+#book-appointment-wizard #appointment-details p,
+#book-appointment-wizard #customer-details p {
+    font-size: 16px;
+    line-height: 28px;
+}
+#book-appointment-wizard #wizard-frame-1 label {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+#book-appointment-wizard #wizard-frame-1 select {
+    margin-bottom: 25px;
+}
+#book-appointment-wizard .captcha-title {
+    float: left;
+    margin: 7px 0 10px 0;
+}
+#book-appointment-wizard .captcha-title .fa-sync-alt {
+    cursor: pointer;
+    transition: all .3s linear;
+}
+#book-appointment-wizard .captcha-title .fa-sync-alt:hover {
+    color: #1a865f;
+}
+#book-appointment-wizard .captcha-image {
+    float: left;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .4)
+}
+#book-appointment-wizard .captcha-text {
+    width: 100%;
+    margin-bottom: 20px;
+}
+#book-appointment-wizard #service-description {
+    overflow-y: auto;
+    clear: both;
+    max-height: 153px;
+    box-shadow: none;
+}
+#book-appointment-wizard #select-language,
+#book-appointment-wizard .backend-link {
+    display: block;
+    min-width: 120px;
+    margin: 15px auto;
+    padding: 5px;
+}
+.popover .popover-title {
+    text-align: center;
+}
+.popover .popover-content #language-list .language {
+    margin: 15px 0;
+}
+@media (min-width: 768px) {
+    .wrapper {
+        min-height: 100vh;
+    }
+    #book-appointment-wizard {
+        border-radius: .25rem;
+        overflow: hidden;
+        box-shadow: rgba(45, 62, 80, .12) 0 1px 5px 0;
+    }
+    #book-appointment-wizard #company-name {
+        display: inline-block;
+        float: left;
+        margin: 10px auto;
+    }
+    #book-appointment-wizard #steps {
+        display: inline-block;
+        float: right;
+        margin: 5px auto;
+    }
+    #book-appointment-wizard .wizard-frame {
+        padding: 10px 20px;
+    }
+    #book-appointment-wizard .wizard-frame .command-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    #book-appointment-wizard .captcha-title {
+        margin-right: 20px;
+        margin-top: 7px;
+    }
+    #book-appointment-wizard .captcha-image {
+        float: right;
+    }
+    #book-appointment-wizard #select-language {
+        width: 100px;
+        padding: 5px;
+        margin: 5px auto;
+    }
+    #book-appointment-wizard #frame-footer small {
+        display: flex;
+    }
+    #book-appointment-wizard .footer-options,
+    #book-appointment-wizard .footer-powered-by {
+        width: 50%;
+    }
+    #book-appointment-wizard .footer-powered-by {
+        text-align: left;
+        padding: 5px 5px 5px 0;
+    }
+    #book-appointment-wizard .footer-options {
+        text-align: right;
+    }
+    #book-appointment-wizard #select-language {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    #book-appointment-wizard .backend-link {
+        display: inline-block;
+        min-width: 120px;
+        padding: 5px;
+        margin: 5px auto;
+    }
+}
+#message-frame,
+#success-frame {
+    background: #fff;
+    border: 1px solid #dddada;
+    padding: 70px;
+}
+#message-frame #message-icon,
+#success-frame #success-icon {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#message-frame .alert,
+#success-frame .alert {
+    margin-top: 20px;
+}
+#message-frame,
+#success-frame {
+    text-align: center;
+    height: auto;
+    border: none;
+    padding: 35px;
+}
+#message-frame #message-icon,
+#success-frame #success-icon {
+    width: 64px;
+    display: block;
+    margin: auto;
+    float: none!important;
+}
+#success-frame .btn {
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 300px;
+}
+@media (min-width: 768px) {
+    #message-frame,
+    #success-frame {
+        height: 100%;
+    }
+}
+.booking-header-bar {
+    padding: 15px 0;
+    margin: 0;
+    background: #f3f2e7;
+    border-bottom: 1px solid #e4e1c9;
+    text-align: center;
+}
+.ui-dialog .ui-dialog-title {
+    font-size: 1.2em;
+}
+@media (min-width: 768px) {
+    .booking-header-bar {
+        padding: 15px 0;
+        margin: 0;
+        background: #f3f2e7;
+        border-bottom: 1px solid #e4e1c9;
+        text-align: left;
+    }
+}
+
+/* ------------------------------------------------Nuevos Estilos---------------------------------------------------- */
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.alert-gob {
+    color: #000000;
+    background-color: #ffc297;
+    border-color: #ffc297;
+}
+
+.borde-inferior{
+    border-bottom: 1px solid #ebeef1;
+    margin-bottom: 1%;
+}
+
+.btn-atras-secondary {
+    color: #4C4C4C;
+    background-color: #D0D0D0;
+    border-color: #D0D0D0;
+}
+
+.btn-atras-secondary:hover {
+    color: #4C4C4C;
+    background-color: #fff;
+    border-color: #4C4C4C;
+}
+
+.btn-gob {
+    color: #fff;
+    background-color: #9E1724;
+    border-color: #9E1724;
+}
+
+.btn-gob:hover {
+    color: #9E1724;
+    background-color: #fff;
+    border-color: #9E1724;
+}
+
+.btn-outline-secondary:hover {
+    color: #ffffff !important;
+    background-color: #D0D0D0 !important;
+    border-color: #D0D0D0 !important;
+}
+
+.btn-buscardni{
+    margin-top: 10%;
+    margin-left: 9%;
+    margin-bottom: 15%;
+}
+
+#contenedor-violencia{
+    margin-top: -10%;
+}
+
+.font-icon{
+    font-size: 18px;
+}
+
+footer {
+    color: #fff;
+    background: -webkit-gradient(linear, left top, right top, from(#040000), to(#4b0014));
+    background: linear-gradient(to right, #040000 0%, #4b0014 100%);
+}
+
+footer a {
+    color: #fff;
+}
+
+footer hr{
+    border-color: #871c28;
+}
+
+#img-logo-gobierno {
+    width: 350px;
+}
+
+.link-footer:hover{
+    color: #871c28;
+}
+
+.link-consulta{
+    color: #9E1724;
+}
+
+.link-consulta:hover{
+    color: #4C4C4C;
+}
+
+nav.navbar {
+    min-height: 4.5rem;
+    border-bottom: solid 1px #e0e0e0;
+    background: url(https://d1pucn86e4upao.cloudfront.net/templates/g5_hydrogen/custom/images/borde-colores.svg) center top repeat-x white;
+}
+
+#slogan-p1{
+    font-weight: 200;
+}
+
+#success-icon{
+    width: 45%;
+}
+
+.texto-frame-title{
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.texto-margin{
+    margin-top: 2%;
+    margin-bottom: 30px;
+}
+
+.titulo-gris{
+    color: #D0D0D0;
+    color: #9E1724;
+}
+
+/* Estilo de la barra de scroll del selector de horas */
+#available-hours::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#available-hours::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+#available-hours::-webkit-scrollbar-button:increment, #available-hours::-webkit-scrollbar-button {
+    display: none;
+} 
+
+#available-hours::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+#available-hours::-webkit-scrollbar-thumb {
+    background-color: #D0D0D0;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+#available-hours::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+/* Estilo de la barra de scroll del selector de horas */
+ 
+/*-------------------------------------------------------Pantallas extra pequeñas (móviles) < 360px ------------------------------------------------------------*/
+@media (min-width: 360px) and (max-width: 390px){
+    #book-appointment-wizard {
+        margin-top: 35%;
+        margin-bottom: 20%;
+    }
+
+    #book-appointment-wizard #company-name {
+        margin: 0px 0;
+    }
+
+    .btn-buscardni {
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-bottom: 10%;
+    }
+
+    .contenido-pc{
+        display: none !important;
+    }
+
+    .contenido-movil{
+        display: block !important;
+    }
+
+    #cuadro-mensaje-consulta{
+        margin-top: 5%;
+    }
+
+    .cuerpo-turnero{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    #img-logo-gobierno {
+        width: 310px;
+    }
+    
+    #logo-cidi-footer{
+        max-width: 85%;
+    }
+
+    .margin-top-form{
+        margin-top: 5%;
+    }
+
+    #success-icon {
+        width: 85%;
+    }
+
+    #tarjeta-ciudadano{
+        margin-top: 5%;
+    }
+}
+
+/*-------------------------------------------------------Pantallas extra pequeñas (móviles) < 576px ------------------------------------------------------------*/
+@media (min-width: 391px) and (max-width: 412px) {
+    #book-appointment-wizard {
+        margin-top: 35%;
+        margin-bottom: 20%;
+    }
+
+    #book-appointment-wizard #company-name {
+        margin: 0px 0;
+    }
+
+    .btn-buscardni {
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-bottom: 10%;
+    }
+
+    .contenido-pc{
+        display: none !important;
+    }
+
+    .contenido-movil{
+        display: block !important;
+    }
+
+    #cuadro-mensaje-consulta{
+        margin-top: 5%;
+    }
+
+    .cuerpo-turnero{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    #img-logo-gobierno {
+        width: 330px;
+    }
+
+    .margin-top-form{
+        margin-top: 5%;
+    }
+    
+    #logo-cidi-footer{
+        max-width: 85%;
+    }
+
+    #success-icon {
+        width: 85%;
+    }
+
+    #tarjeta-ciudadano{
+        margin-top: 5%;
+    }
+}
+
+/*-------------------------------------------------------Pantallas pequeñas (_sm, tablets _en vertical) ≥ 576px-------------------------------------------------*/
+@media (min-width: 413px) and (max-width: 576px) {
+    #book-appointment-wizard {
+        margin-top: 30%;
+        margin-bottom: 20%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    #book-appointment-wizard #company-name {
+        margin: 0px 0;
+    }
+
+    .btn-buscardni {
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-bottom: 15%;
+    }
+  
+    .contenido-pc{
+        display: none !important;
+    }
+
+    .contenido-movil{
+        display: block !important;
+    }
+
+    #cuadro-mensaje-consulta{
+        margin-top: 10%;
+    }
+
+    #logo-cidi-footer{
+        width: 80%;
+    }
+
+    #success-icon {
+        width: 90%;
+    }
+
+    #tarjeta-ciudadano{
+        margin-top: 5%;
+    }
+}
+
+/* ------------------------------------------------------Pantallas medianas (md, para tablets en horizontal)  ≥ 768px ------------------------------------------*/
+@media (min-width: 577px) and (max-width: 769px){
+
+    #book-appointment-wizard {
+        margin-top: 20%;
+    }
+
+    .contenido-pc{
+        display: block !important;
+    }
+
+    .contenido-movil{
+        display: none !important;
+    }
+
+    #main {
+        min-height: 85%;
+    }
+}
+
+/* ------------------------------------------------------Pantallas grandes (lg, tamaño escritorio) ≥ 992px------------------------------------------------------*/
+@media (min-width: 770px) and (max-width: 992px){
+
+    #book-appointment-wizard {
+        margin-top: 20%;
+    }
+
+    .contenido-pc{
+        display: block !important;
+    }
+
+    .contenido-movil{
+        display: none !important;
+    }
+}
+
+/* ------------------------------------------------------Pantallas extra grandes (xl, escritorio grande) ≥ 1200px-----------------------------------------------*/
+@media (min-width: 992px){
+    .contenido-pc{
+        display: block !important;
+    }
+
+    .contenido-movil{
+        display: none !important;
+    }
+}
+/* ------------------------------------------------Nuevos Estilos---------------------------------------------------- */
